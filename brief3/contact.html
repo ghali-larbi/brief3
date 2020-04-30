@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact</title>
+        <meta charset = "UTF-8" />
+        <link rel="stylesheet" href="contact.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script>
+            function valider(){
+                     var nom=document.form1.text1.value;
+                     var message=document.form1.text2.value;
+                     var email=document.form1.text3.value;
+                     if(nom==""){document.getElementById('s1').innerHTML="***nom est non valide***";}
+                     else if(message==""){document.getElementById('s2').innerHTML="***Message est non valide***";}
+                     else if((email=="") || (email.indexOf('@')==-1) || (email.charAt(email.length-4)!='.') && (email.charAt(email.length-3)!='com')){document.getElementById('s3').innerHTML="*** email est non valide***"}
+                     else{
+                         alert(nom+'\n'+message+'\n'+email);
+                     }
+                 }
+               </script>
+       </head>
+    <body>
+        <header>
+            <img class="logos" src="images/logo_hotel.png">
+            <input type="checkbox" id="check">
+            <nav>
+       
+                <ul>
+       
+                  <label for="check"><i class="fa fa-times"></i></label>
+                <li class="logo"><img src="images/logo-1.png"></li>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="promo.html">PROMO</a></li>
+                <li><a href="galerie.html">GALERIE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+            <label for="check" class="menu-toggle"><i class="fa fa-bars"></i></label for="check">
+       
+       
+       
+             <div class="head-text">
+               <h1>CONTACT</h1>
+               <div class="line"></div>
+               <div class="text">
+                 <span style="color: #696662;">HOME</span>
+                 <span>/</span>
+                 <span>Contact</span>
+               </div>
+             </div>
+        </header>
+        <form name="form1" class=inputbox>
+            <table>
+            <tr><td></td><td><input type="text" class="input" name="text1" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your Name"><span id="s1"></span></td></tr>
+            <tr><td></td><td><input type="text" name="text3" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your E-mail" class="input"><span id="s3"></span></td></tr>
+            <tr><td></td><td><input type="text" name="text2" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your enquiry" class="input" style="height: 170px;"><span id="s2"></span></td></tr>
+            <tr><td><input id="box1" type="button" value="Send Now" onclick="valider()">
+               </tr>
+            </table>
+        </form>
+                <div class="adrs1">
+                    <h3>Our Address</h3>
+                    <p> 129 Park street, New York City, NY 10903</p>
+                    <h3>Phone : </h3>
+                    <p> (+6221) 000 888 999</p>
+                    <h3>Fax :</h3>
+                    <p> (+6221) 000 888 111</p>
+                    <h3>Email :</h3>
+                    <p> companyname@gmail.com</p>
+                    <h3>Website :</h3>
+                    <p>www.companyname.com</p>
+                </div>
+                <div class="find1">
+                    <h2>FIND US</h2>
+                    <img src="images/gps-location-map-marker-pin-navigation-12-11041.png" class="inc1" alt="">
+                </div>
+                <div class="find2">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7218.625306579738!2d55.33690091816198!3d25.226392304955237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5d684bd88689%3A0xe0d7a44e8e28701!2sJaddaf%20Waterfront%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sus!4v1578316189253!5m2!1sen!2sus" width="800" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+                <div class="section7">
+                    <div class="div1">
+                    <img  src="imageS/logoDark.png" class="imgL" width="120px" height="60px">
+                    <p style="color: #000;">Book your trip. Book online, Free cancellation. cheap travel. Immediate confirmation. 24/7 customer service.</p>
+                    <span><a href="https://www.facebook.com" target="_BLANK"><img  src="images/Capture1.png" width="38px" height="40px" style="margin-left: 250px;"></a>
+                        <a href="https://www.facebook.com" target="_BLANK"><img src="images/Capture2.png" width="38px" height="40px"></a>
+                        <a href="https://www.instagram.com" target="_BLANK"><img src="images/Capture3.png" width="38px" height="40px"></a>
+                    </span>
+                    </div>
+                    <div class="div2">
+                        <h2 style="color: #688095;">Menu</h2>
+                        <ul>
+                            <li><a href="home.html"><i class="fas fa-arrow-right"></i>Home</a></li>
+                            <li><a href="about.html"><i class="fas fa-arrow-right"></i>About US</a></li>
+                            <li><a href="services.html"><i class="fas fa-arrow-right"></i>Services</a></li>
+                            <li><a href="promo.html"><i class="fas fa-arrow-right"></i>Promo</a></li>
+                            <li><a href="galerie.html"><i class="fas fa-arrow-right"></i>Gallerie</a></li>
+                            <li><a href="contact.html"><i class="fas fa-arrow-right"></i>Contact</a></li>
+                        </ul>
+                </div>
+                <div class="div3" style="position: relative;top: -4.9%;right: 10%;">
+                    <h2 style="color: #688095;">Contact</h2>
+                    <div style="color: #000;">Culture Village Al Jaddaf, Bur Dubaï, Dubaï, Émirats arabes unis</div>
+                    <p style="width:100%; font-size: 15px; color: #2C4458; font-family: 'Open Sans', sans-serif;" >+1 800 123 1234 &nbsp;<span style="color: #688095;font-family: 'Open Sans', sans-serif;">email@website.com</span></p>
+
+                        </div>
+                </div>
+                <footer class="footer">
+                <span class="S1" style="margin-left: 300px; "> &copy; Copyright 2019. All Right Reserved</span>
+                </footer>
+       </body>
+</html>
